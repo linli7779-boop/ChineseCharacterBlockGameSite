@@ -8,16 +8,18 @@ and ships with the Windows executable and gameplay demo video under `public/`.
 
 ```
 /project-root
-├── public/
-│   ├── chinese_character_block.exe
-│   └── Chinese-Character-Block_game_demo.mp4
 ├── src/
 │   ├── index.html
 │   ├── styles.css
-│   └── app.js
-├── assets/
-│   └── webpage_example.png
+│   ├── app.js
+│   ├── public/
+│        ├── chinese_character_block.exe
+│        └── Chinese-Character-Block_game_demo.mp4
+│   ├── assets/
+│        └── webpage_example.png
 └── PRD.txt
+```
+move folders 'public/' and 'assets/' under folder 'src/'
 ```
 
 ## Local development
