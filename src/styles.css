@@ -232,6 +232,71 @@ body {
   border: 0;
 }
 
+.contact {
+  width: min(100%, 720px);
+  padding: 36px 32px 40px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 28px;
+  box-shadow: 0 18px 40px var(--color-shadow);
+  display: grid;
+  gap: 18px;
+}
+
+.contact h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.contact p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.contact__form {
+  display: grid;
+  gap: 18px;
+}
+
+.contact__field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact__label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.95);
+  transition: border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.contact__input:focus-visible {
+  outline: none;
+  border-color: var(--color-button);
+  box-shadow: 0 0 0 3px rgba(242, 140, 56, 0.25);
+}
+
+.contact__input--textarea {
+  resize: vertical;
+  min-height: 144px;
+}
+
+.contact__status {
+  margin: 0;
+  min-height: 1.25em;
+  font-size: 0.95rem;
+  color: rgba(51, 51, 51, 0.7);
+}
+
 @media (max-width: 1024px) {
   .page {
     padding: 72px 24px 120px;
@@ -266,6 +331,10 @@ body {
   .actions .button:nth-child(3) {
     grid-column: 1 / -1;
   }
+
+  .contact {
+    padding: 32px 24px 36px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -288,5 +357,9 @@ body {
 
   .button {
     font-size: 1rem;
+  }
+
+  .contact {
+    padding: 28px 20px 32px;
   }
 }

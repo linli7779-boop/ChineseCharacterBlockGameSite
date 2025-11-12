@@ -48,3 +48,5 @@ and ships with the Windows executable and gameplay demo video under `public/`.
 - Buttons use accessible focus states and hover transitions aligned with the
   product requirements.
 - The downloadable executable runs on Windows operating systems only.
+- The contact form launches the viewer's email client to message
+  `lin.li7779@gmail.com`.
