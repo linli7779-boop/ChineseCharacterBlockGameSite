@@ -1,0 +1,21 @@
+Please use flake and python to develop a simple and responsive landing page using HTML and CSS for my game Chinese Character Block.
+
+Goals:
+1. Host it on Vercel as a static site.
+2. Include a download button for the `.exe` file hosted either in `/public` folder
+3. Include a short description of the game (it’s a Chinese learning game where users learn characters by orienting falling blocks or typing pinyin or constructing idioms).
+4. Use a clean and modern style (centered layout, nice font, soft colors, rounded buttons, background for a typical educational language game) similar to webpage_example.png.
+5. Make it responsive for both desktop and mobile.
+6. Make it work for both Windows and OS operating system.
+7. Set up a donation by paypal and connect with my paypal account harrison_lee25@hotmail.com. Hide the paypal email account from the viewers. write something like "Donation less than $5 is welcome".
+8. The folder structure should look like:
+/public
+├── ChineseCharacterBlock.exe
+├── Chinese-Character-Block_game_demo.mp4
+/index.html
+/style.css
+
+Deliverables:
+- A full `index.html` file
+- A matching `style.css`
+- Clear instructions on how to deploy this to Vercel and where to put the `.exe` and `demo.mp4` files

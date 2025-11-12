@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Play Chinese Character Block to learn characters, pinyin, and
+      idioms while stacking blocks."
+    />
+    <title>Chinese Character Block</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="skyline" aria-hidden="true">
+      <div class="sky"></div>
+      <div class="cloud cloud--left"></div>
+      <div class="cloud cloud--right"></div>
+      <div class="ground"></div>
+    </div>
+    <main class="page" id="top">
+      <header class="hero">
+        <h1 class="hero__title">Chinese Character Block</h1>
+        <p class="hero__subtitle">
+          A playful way to strengthen your Chinese vocabulary as you orient
+          falling blocks, type pinyin, and build idioms.
+        </p>
+      </header>
+      <section class="media" aria-labelledby="demo-title">
+        <h2 id="demo-title" class="sr-only">Game demo video</h2>
+        <video
+          class="media__player"
+          src="/Chinese-Character-Block_game_demo.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          controls
+        >
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <section class="info" aria-labelledby="about-title">
+        <h2 id="about-title">Game overview</h2>
+        <p>
+          Rotate each block or type the matching pinyin to keep the tower from
+          growing too tall. Unlock new levels, master tone marks, and piece
+          together idioms as you play.
+        </p>
+      </section>
+      <section class="actions" aria-label="Primary actions">
+        <a
+          class="button"
+          href="/chinese_character_block.exe"
+          download
+        >
+          Download for Windows (.exe)
+        </a>
+        <a
+          class="button button--outline"
+          href="https://chinese-character-block.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Play Online
+        </a>
+        <a
+          class="button"
+          href="https://www.paypal.com/donate/?hosted_button_id=REPLACE_ME"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Donate (PayPal)
+        </a>
+        <p class="actions__note">Donation less than $5 is welcome.</p>
+        <p class="actions__note">Executable works on Windows operating systems only.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; <span id="current-year"></span> Chinese Character Block</p>
+      <a class="site-footer__top" href="#top">Back to top</a>
+    </footer>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

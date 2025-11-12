@@ -1,0 +1,136 @@
+Product Requirements Document (PRD)
+Project: Chinese Character Block — Landing Page
+
+Owner: Lin Li
+Platform: Static website (HTML, CSS, minimal JS)
+Deployment: Hosted on Vercel
+Development Stack: Flake + Python for build scripting, HTML5, CSS3
+Target Systems: Windows & macOS browsers, responsive for mobile
+
+1. Project Goals
+
+Create a simple, visually appealing, and responsive landing page for the Chinese Character Block game that includes:
+
+A game demo video showing gameplay.
+
+A download button for the .exe file (in /public).
+
+A short game description.
+
+A PayPal donation button (email hidden).
+
+Clean, modern, responsive design (like webpage_example.png).
+
+Deployed on Vercel as a static site.
+
+2. Visual Design Requirements
+
+Reference: webpage_example.png
+
+Key Design Elements:
+
+Centered layout (vertical and horizontal).
+
+Soft educational background: sky blue gradient or soft green ground.
+
+Rounded buttons with hover animation.
+
+Modern sans-serif font: Poppins, Nunito Sans, or Inter.
+
+Color scheme:
+
+Background: #C8EBF9
+
+Primary button: #F28C38
+
+Button hover: #FFD89C
+
+Text: #333333
+
+Accent (borders/shadows): rgba(0,0,0,0.1)
+
+3. Responsiveness
+Device	Behavior
+Desktop	Video centered at 720px width, text centered below.
+Tablet	Video scaled to 80% width, two buttons per row.
+Mobile	Video 100% width, single-column layout, stacked buttons.
+
+4. Content Requirements
+Title:
+
+Chinese Character Block
+
+Description:
+
+A fun Chinese learning game where you learn characters by orienting falling blocks, typing pinyin, or constructing idioms. Strengthen your Chinese vocabulary while having fun!
+
+Video Demo:
+
+File: /public/Chinese-Character-Block_game_demo.mp4
+
+Placement: Below title and above description.
+
+Attributes: autoplay, loop, muted, controls.
+
+Responsive scaling: max-width: 720px; width: 100%.
+
+5. Buttons
+1️⃣ Download Game (.exe)
+
+Label: “Download for Windows (.exe)”
+
+File: /public/chinese_character_block.exe
+
+2️⃣ Play Online
+
+Links to the web-based game version hosted on Vercel.
+
+3️⃣ Donate (PayPal)
+
+Hidden email via PayPal hosted button ID.
+
+Text below:
+
+“Donation less than $5 is welcome.”
+
+6. Technical Setup
+
+Development Tools:
+
+Flake: Build automation for static files.
+
+Python: Generate HTML/CSS and automate deployment scripts.
+
+/project-root
+│
+├── flake.lock
+├── flake.nix
+├── build.py
+├── /public
+│    ├── chinese_character_block.exe
+│    ├── Chinese-Character-Block_game_demo.mp4
+│    └── favicon.ico
+├── /src
+│    ├── index.html
+│    ├── styles.css
+│    └── app.js
+└── /assets
+     └── webpage_example.png
+
+Hosting:
+
+Deploy via GitHub → connected to Vercel.
+
+Static export, no backend needed.
+
+Ensure /public folder is accessible for downloads and video playback.
+
+7. Acceptance Criteria
+Feature	Requirement	Status
+Game description	Displays clearly below video	✅
+Download button	Functional .exe download	✅
+Demo video	Autoplays muted, loops, responsive	✅
+Donation button	Works, hides PayPal email	✅
+Design	Matches soft educational theme	✅
+Responsiveness	Works across devices	✅
+Deployment	Hosted on Vercel, loads under 1.5s	✅
