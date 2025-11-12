@@ -152,6 +152,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   padding: 16px 24px;
   border-radius: 999px;
   border: none;
@@ -178,6 +179,27 @@ body {
 .button:focus-visible {
   outline: 3px solid rgba(255, 255, 255, 0.8);
   outline-offset: 2px;
+}
+
+.button--stacked {
+  flex-direction: column;
+  text-align: center;
+}
+
+.button__text {
+  display: block;
+}
+
+.button__subtitle {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.3;
+}
+
+.button--outline .button__subtitle {
+  color: var(--color-text);
 }
 
 .button--outline {
