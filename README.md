@@ -35,9 +35,9 @@ and ships with the Windows executable and gameplay demo video under `public/`.
 2. In the Vercel project settings set `output directory` to `src` so the build
    serves the HTML and assets located there.
 3. Ensure the `public/` directory is uploaded with the executable and video.
-   Vercel copies everything in `public/` to the root of the deployed site,
-   making them available at `/chinese_character_block.exe` and
-   `/Chinese-Character-Block_game_demo.mp4`.
+   Vercel copies everything in `public/` to the deployed site, making the
+   assets available at `/public/chinese_character_block.exe` and
+   `/public/Chinese-Character-Block_game_demo.mp4`.
 4. Redeploy the project. Verify that the video autoplays muted and the download
    link retrieves the `.exe` file successfully.
 
