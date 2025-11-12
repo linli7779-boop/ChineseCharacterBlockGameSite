@@ -13,7 +13,7 @@ and ships with the Windows executable and gameplay demo video under `public/`.
 │   ├── styles.css
 │   ├── app.js
 │   ├── public/
-│        ├── chinese_character_block.exe
+│        ├── chinese_character_block.zip
 │        └── Chinese-Character-Block_game_demo.mp4
 │   ├── assets/
 │        └── webpage_example.png
@@ -36,9 +36,9 @@ move folders 'public/' and 'assets/' under folder 'src/'
 1. Push the repository to GitHub and connect it to Vercel.
 2. In the Vercel project settings set `output directory` to `src` so the build
    serves the HTML and assets located there.
-3. Ensure the `public/` directory is uploaded with the executable and video.
+3. Ensure the `public/` directory is uploaded with the zip package and video.
    Vercel copies everything in `public/` to the deployed site, making the
-   assets available at `/public/chinese_character_block.exe` and
+   assets available at `/public/chinese_character_block.zip` and
    `/public/Chinese-Character-Block_game_demo.mp4`.
 4. Redeploy the project. Verify that the video autoplays muted and the download
    link retrieves the `.exe` file successfully.
@@ -49,6 +49,6 @@ move folders 'public/' and 'assets/' under folder 'src/'
   motion preferences.
 - Buttons use accessible focus states and hover transitions aligned with the
   product requirements.
-- The downloadable executable runs on Windows operating systems only.
+- The downloadable package targets Windows operating systems only.
 - The contact form launches the viewer's email client to message
   `lin.li7779@gmail.com`.
