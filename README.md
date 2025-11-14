@@ -19,7 +19,7 @@ and ships with the Windows executable and gameplay demo video under `public/`.
 │        └── webpage_example.png
 └── PRD.txt
 ```
-move folders 'public/' and 'assets/' under folder 'src/'
+move folders 'public/' and 'assets/' under folder 'src/' because on vecel.com the output directory was set to be src.
 ```
 
 ## Local development
@@ -52,3 +52,6 @@ move folders 'public/' and 'assets/' under folder 'src/'
 - The downloadable package targets Windows operating systems only.
 - The contact form launches the viewer's email client to message
   `lin.li7779@gmail.com`.
+
+## Paypal Donation link:
+https://www.paypal.com/donate/?hosted_button_id=SS3LVP7AGTN9N
