@@ -14,7 +14,7 @@ and ships with the Windows executable and gameplay demo video under `public/`.
 │   ├── app.js
 │   ├── public/
 │        ├── chinese_character_block.zip
-│        └── demo.mp4
+│        └── demo_clean.mp4
 │   ├── assets/
 │        └── webpage_example.png
 └── PRD.txt
@@ -39,7 +39,7 @@ move folders 'public/' and 'assets/' under folder 'src/' because on vecel.com th
 3. Ensure the `public/` directory is uploaded with the zip package and video.
    Vercel copies everything in `public/` to the deployed site, making the
    assets available at `/public/chinese_character_block.zip` and
-   `/public/demo.mp4`.
+   `/public/demo_clean.mp4`.
 4. Redeploy the project. Verify that the video autoplays muted and the download
    link retrieves the `.exe` file successfully.
 
